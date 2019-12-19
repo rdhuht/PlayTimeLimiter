@@ -59,10 +59,6 @@
             <id>papermc-repo</id>
             <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
-        <repository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
-        </repository>
     </repositories>
 
     <dependencies>
@@ -71,13 +67,6 @@
             <artifactId>spigot-api</artifactId>
             <version>1.12.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>rdhuht.github.palytimelimiter</groupId>
-            <artifactId>ActionBarAPI</artifactId>
-            <version>1.5.4</version>
-            <scope>system</scope>
-            <systemPath>/Users/JeremyTsui/Downloads/ActionBarAPI-1.5.4.jar</systemPath>
         </dependency>
     </dependencies>
 </project>
