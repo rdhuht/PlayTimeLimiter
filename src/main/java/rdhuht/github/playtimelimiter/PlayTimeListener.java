@@ -51,7 +51,6 @@ public class PlayTimeListener implements Listener {
         timeLeft.setSuffix("");
         timeLeft.setPrefix("");
 
-
         new BukkitRunnable() {
             @Override
             public void run() {
