@@ -59,6 +59,10 @@
             <id>papermc-repo</id>
             <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
+        <repository>
+            <id>spigotmc-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -68,5 +72,17 @@
             <version>1.12.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
+            <classifier>javadoc</classifier>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>craftbukkit-1.12.2</groupId>-->
+<!--            <artifactId>craftbukkit-1.12.2</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--            <systemPath>/Users/JeremyTsui/Documents/GitHub/Spigot-1.12.2/craftbukkit-1.12.2.jar</systemPath>-->
+<!--        </dependency>-->
     </dependencies>
 </project>
