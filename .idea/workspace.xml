@@ -2,34 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89afe94e-1376-415d-9c9d-80bad1b5e92b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_javadoc_1_12_2_R0_1_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayTimeLimiter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PlayTimeLimiter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/Configuration$Options.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/Configuration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeLimiter$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeLimiter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/exceptions/UnknownPlayerException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/metrics/MetricsLite$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/metrics/MetricsLite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/threads/PlayTimeSaverTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/threads/ShutdownThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/FileUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/MyUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/TabCompleteHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/Timestamper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-PlayTimeLimiter-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,10 +121,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="82" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576762259044" />
-    <state x="178" y="62" key="Maven.ArtifactSearchDialog" timestamp="1576757685047">
+    <state x="178" y="62" key="Maven.ArtifactSearchDialog" timestamp="1576813311766">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="178" y="62" key="Maven.ArtifactSearchDialog/0.0.1280.800@0.0.1280.800" timestamp="1576757685047" />
+    <state x="178" y="62" key="Maven.ArtifactSearchDialog/0.0.1280.800@0.0.1280.800" timestamp="1576813311766" />
     <state x="128" y="0" key="SettingsEditor" timestamp="1576136212072">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -156,13 +133,24 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="423" y="185" key="chooseDestDirectoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1576135361467" />
-    <state x="317" y="229" key="com.intellij.ide.util.TipDialog" timestamp="1576762232867">
+    <state x="317" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1576810314594">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="317" y="229" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576762232867" />
+    <state x="317" y="226" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576810314594" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1576761520093">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1576761520093" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
