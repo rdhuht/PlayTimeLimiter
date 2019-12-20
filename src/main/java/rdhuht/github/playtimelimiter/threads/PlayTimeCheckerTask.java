@@ -1,8 +1,13 @@
 package rdhuht.github.playtimelimiter.threads;
 
 import java.io.File;
+import java.lang.reflect.Field;
 
+import net.minecraft.server.v1_12_R1.ChatComponentText;
+import net.minecraft.server.v1_12_R1.PacketPlayOutPlayerListHeaderFooter;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import rdhuht.github.playtimelimiter.PlayTimeLimiter;
 import rdhuht.github.playtimelimiter.utils.FileUtils;
@@ -17,6 +22,8 @@ public class PlayTimeCheckerTask implements Runnable {
     public PlayTimeCheckerTask(PlayTimeLimiter instance) {
         this.plugin = instance;
     }
+
+    PacketPlayOutPlayerListHeaderFooter packet = new PacketPlayOutPlayerListHeaderFooter();
 
     public void run() {
         for (Player player : this.plugin.getServer().getOnlinePlayers()) {
@@ -45,6 +52,7 @@ public class PlayTimeCheckerTask implements Runnable {
                     300)) {
                 player.sendTitle("Time", ChatColor.GREEN + plugin.getConfig().getString(TIME_LEFT_5m), 10, 20, 10);
             }
+
         }
     }
 }

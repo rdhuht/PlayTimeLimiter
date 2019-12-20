@@ -2,16 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89afe94e-1376-415d-9c9d-80bad1b5e92b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_javadoc_1_12_2_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PlayTimeLimiter_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_1_12_2_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_javadoc_1_12_2_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/craftbukkit_1_12_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ActionBarAPI_1_5_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayTimeLimiter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PlayTimeLimiter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,9 +47,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.29425287" />
+    <property name="project.structure.side.proportion" value="0.24942529" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager">
     <configuration name="PlayTimeLimiter build" type="MavenRunConfiguration" factoryName="Maven">
@@ -101,56 +114,59 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="240" y="65" key="#Project_Structure/0.0.1280.800@0.0.1280.800" timestamp="1576136465144" />
-    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576136137190">
+    <state x="104" y="62" width="1071" height="734" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576839931219">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1576136137190" />
-    <state width="1238" height="82" key="GridCell.Tab.0.bottom" timestamp="1576762259045">
+    <state x="104" y="62" width="1071" height="734" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1576839931219" />
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1576828513194">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="82" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576762259045" />
-    <state width="1238" height="82" key="GridCell.Tab.0.center" timestamp="1576762259043">
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1576828513194" />
+    <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576828771396">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="82" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576762259043" />
-    <state width="1238" height="82" key="GridCell.Tab.0.left" timestamp="1576762259042">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1576828771396" />
+    <state width="1238" height="228" key="GridCell.Tab.0.bottom" timestamp="1576840988559">
+      <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="82" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576762259042" />
-    <state width="1238" height="82" key="GridCell.Tab.0.right" timestamp="1576762259044">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1238" height="159" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576839635997" />
+    <state width="1238" height="228" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1576840988559" />
+    <state width="1238" height="228" key="GridCell.Tab.0.center" timestamp="1576840988556">
+      <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="82" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576762259044" />
+    <state width="1238" height="159" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576839635990" />
+    <state width="1238" height="228" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1576840988556" />
+    <state width="1238" height="228" key="GridCell.Tab.0.left" timestamp="1576840988555">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state width="1238" height="159" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576839635979" />
+    <state width="1238" height="228" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1576840988555" />
+    <state width="1238" height="228" key="GridCell.Tab.0.right" timestamp="1576840988557">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state width="1238" height="159" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576839635993" />
+    <state width="1238" height="228" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1576840988557" />
     <state x="178" y="62" key="Maven.ArtifactSearchDialog" timestamp="1576813311766">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="178" y="62" key="Maven.ArtifactSearchDialog/0.0.1280.800@0.0.1280.800" timestamp="1576813311766" />
-    <state x="128" y="0" key="SettingsEditor" timestamp="1576136212072">
+    <state x="128" y="0" width="997" height="709" key="SettingsEditor" timestamp="1576839897463">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1576136212072" />
+    <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1576839897463" />
+    <state x="128" y="23" width="997" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1576827573050" />
     <state x="423" y="185" key="chooseDestDirectoryDialog" timestamp="1576135361467">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="423" y="185" key="chooseDestDirectoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1576135361467" />
-    <state x="317" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1576810314594">
+    <state x="317" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1576821634596">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="317" y="226" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576810314594" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1576761520093">
+    <state x="317" y="226" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576821634596" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1576838051467">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1576761520093" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1576838051467" />
+    <state x="305" y="133" width="670" height="600" key="search.everywhere.popup/0.23.1280.709@0.23.1280.709" timestamp="1576827570984" />
   </component>
 </project>

@@ -1,14 +1,19 @@
 package rdhuht.github.playtimelimiter;
 
 import java.io.File;
+import java.lang.reflect.Field;
 
+import net.minecraft.server.v1_12_R1.ChatComponentText;
+import net.minecraft.server.v1_12_R1.PacketPlayOutPlayerListHeaderFooter;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.scoreboard.*;
 import rdhuht.github.playtimelimiter.utils.FileUtils;
 import rdhuht.github.playtimelimiter.utils.Timestamper;
 
@@ -33,40 +38,37 @@ public class PlayTimeListener implements Listener {
             // 距离明天还有多少时间
         }
         this.plugin.setPlayerLoggedIn(event.getPlayer().getUniqueId());
-//        event.getPlayer().sendMessage(
-//                "You have " + ChatColor.GREEN + plugin.secondsToDaysHoursSecondsString(
-//                        plugin.getTimeAllowedInSeconds(event.getPlayer().getUniqueId())) + ChatColor.RESET
-//                        + " of playtime left!");
+        event.getPlayer().sendMessage(
+                "You have " + ChatColor.GREEN + plugin.secondsToDaysHoursSecondsString(
+                        plugin.getTimeAllowedInSeconds(event.getPlayer().getUniqueId())) + ChatColor.RESET
+                        + " of playtime left!");
 
-        // scoreboard, showing the left time of players
         Player player = event.getPlayer();
-        ScoreboardManager scoreboardManager = plugin.getServer().getScoreboardManager();
-        Scoreboard scoreboard = scoreboardManager.getNewScoreboard();
-
-        final Objective objective = scoreboard.registerNewObjective("timeLeft", "timeLeft");
-        objective.setDisplaySlot(DisplaySlot.SIDEBAR);
-
-        final Team timeLeft = scoreboard.registerNewTeam("timeLeft");
-        timeLeft.addEntry("bonus");
-        timeLeft.setSuffix("");
-        timeLeft.setPrefix("");
+        PacketPlayOutPlayerListHeaderFooter packet = new PacketPlayOutPlayerListHeaderFooter();
+        String title = plugin.getServer().getServerName();
 
         new BukkitRunnable() {
             @Override
             public void run() {
                 int allowed = plugin.getTimeAllowedInSeconds(player.getUniqueId());
                 String timeLeft = plugin.secondsToDaysHoursSecondsString(allowed);
-                if (allowed < 5 * 60) {
-                    objective.getScore("bonus").setScore(0);
-                } else if (allowed < 10 * 60) {
-                    objective.getScore("bonus").setScore(1);
-                } else {
-                    objective.getScore("bonus").setScore(2);
+                try {
+                    Field a = packet.getClass().getDeclaredField("a");
+                    a.setAccessible(true);
+                    Field b = packet.getClass().getDeclaredField("b");
+                    b.setAccessible(true);
+                    Object header1 = new ChatComponentText(title);
+                    Object footer = new ChatComponentText(ChatColor.GOLD + timeLeft);
+                    a.set(packet, header1);
+                    b.set(packet, footer);
+
+                    if (Bukkit.getOnlinePlayers().size() == 0) return;
+                    ((CraftPlayer) player).getHandle().playerConnection.sendPacket(packet);
+                } catch (NoSuchFieldException | IllegalAccessException e) {
+                    e.printStackTrace();
                 }
-                objective.setDisplayName(timeLeft);
             }
         }.runTaskTimer(plugin, 0, 20);
-        player.setScoreboard(scoreboard);
     }
 
     @EventHandler
