@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89afe94e-1376-415d-9c9d-80bad1b5e92b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PlayTimeLimiter_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_1_12_2_R0_1_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_javadoc_1_12_2_R0_1_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/craftbukkit_1_12_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ActionBarAPI_1_5_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayTimeLimiter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PlayTimeLimiter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,10 +150,11 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="423" y="185" key="chooseDestDirectoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1576135361467" />
-    <state x="317" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1576821634596">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="476" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1576921408049">
+      <screen x="0" y="23" width="1920" height="989" />
     </state>
     <state x="317" y="226" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576821634596" />
+    <state x="476" y="302" key="com.intellij.ide.util.TipDialog/0.23.1920.989@0.23.1920.989" timestamp="1576921408049" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1576838051467">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
