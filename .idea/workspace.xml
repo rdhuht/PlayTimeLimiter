@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89afe94e-1376-415d-9c9d-80bad1b5e92b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="89afe94e-1376-415d-9c9d-80bad1b5e92b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,11 +148,15 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="423" y="185" key="chooseDestDirectoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1576135361467" />
-    <state x="317" y="223" key="com.intellij.ide.util.TipDialog" timestamp="1577070942157">
+    <state x="317" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1577090114544">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="317" y="223" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1577070942157" />
+    <state x="317" y="221" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1577090114544" />
     <state x="476" y="302" key="com.intellij.ide.util.TipDialog/0.23.1920.989@0.23.1920.989" timestamp="1576921408049" />
+    <state x="17" y="72" key="new project wizard" timestamp="1577090201398">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="17" y="72" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1577090201398" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1576838051467">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
