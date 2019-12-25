@@ -1,13 +1,9 @@
 package rdhuht.github.playtimelimiter.threads;
 
 import java.io.File;
-import java.lang.reflect.Field;
 
-import net.minecraft.server.v1_12_R1.ChatComponentText;
 import net.minecraft.server.v1_12_R1.PacketPlayOutPlayerListHeaderFooter;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import rdhuht.github.playtimelimiter.PlayTimeLimiter;
 import rdhuht.github.playtimelimiter.utils.FileUtils;
