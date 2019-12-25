@@ -31,5 +31,7 @@
     <orderEntry type="library" name="Maven: org.spigotmc:spigot-api:javadoc:1.14.4-R0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.bukkit:bukkit:1.14.4-R0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.bukkit:bukkit:javadoc:1.14.4-R0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.github.azbh111:craftbukkit-1.12.2:R" level="project" />
+    <orderEntry type="library" name="Maven: com.github.azbh111:craftbukkit-1.12.2:javadoc:R" level="project" />
   </component>
 </module>
