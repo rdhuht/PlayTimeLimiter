@@ -45,7 +45,8 @@ public class PlayTimeListener implements Listener {
 
         Player player = event.getPlayer();
         PacketPlayOutPlayerListHeaderFooter packet = new PacketPlayOutPlayerListHeaderFooter();
-        String title = plugin.getServer().getServerName();
+//        String title = plugin.getServer().getServerName();
+        String title = plugin.getServer().getName();
 
         new BukkitRunnable() {
             @Override
