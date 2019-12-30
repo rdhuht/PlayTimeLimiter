@@ -29,12 +29,7 @@ import java.util.logging.Level;
 
 import static rdhuht.github.playtimelimiter.Configuration.Options.*;
 
-/**
- * PlayTimeLimiter plugin for Bukkit
- *
- * @author RyanTheAllmighty
- * @author Jamie Mansfield <https://github.com/lexware>
- */
+
 public class PlayTimeLimiter extends JavaPlugin {
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
@@ -65,20 +60,20 @@ public class PlayTimeLimiter extends JavaPlugin {
                 e.printStackTrace();
             }
         }
-        // Register our events
+        // 注册事件
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(playerListener, this);
 
-        // Register our commands
+        // 注册命令
         PlayTimeCommand playTimeCommand = new PlayTimeCommand(this);
         getCommand("playtime").setExecutor(playTimeCommand);
         getCommand("playtime").setTabCompleter(playTimeCommand);
 
-        // Config
+        // 配置文件
         this.started = this.getConfig().isSet(Configuration.Options.TIME_STARTED);
         this.configuration.ensureDefaults();
 
-        // The server started log message
+        // 插件开始运行
         this.getLogger().info(
                 String.format("Server started at %s which was %s ago!",
                         this.configuration.getTimeStarted(),
@@ -92,7 +87,7 @@ public class PlayTimeLimiter extends JavaPlugin {
         final PluginDescriptionFile descriptor = this.getDescription();
         getLogger().info("PlayTimeLimiter v" + descriptor.getVersion() + " is enabled!");
 
-        // Load the playtime from file
+        // 加载记录玩耍时间文件
         this.loadPlayTime();
 
         // Tasks

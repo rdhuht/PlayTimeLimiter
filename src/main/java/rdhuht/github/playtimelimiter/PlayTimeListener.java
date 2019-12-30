@@ -29,47 +29,53 @@ public class PlayTimeListener implements Listener {
         FileUtils.appendStringToFile(new File(this.plugin.getDataFolder(),
                 "playtime.log"), String.format("[%s] %s logged in",
                 Timestamper.now(), event.getPlayer().getName()));
+        // 玩家登陆游戏，检查剩余时间
+        // 剩余时间不够，踢出服务器并记录踢出的时间点
         if (this.plugin.getTimeAllowedInSeconds(event.getPlayer().getUniqueId()) <= 0) {
             FileUtils.appendStringToFile(new File(this.plugin.getDataFolder(), "playtime.log"),
                     String.format("[%s] %s was kicked for exceeding play time",
                             Timestamper.now(), event.getPlayer().getName()));
             event.getPlayer().kickPlayer("You have exceeded the time allowed to play!\n今天的时间已经用完，下次再来吧！#_#");
-            // System.out.print(new PlayTimeLimiter().secondsUntilNextDay());
-            // 距离明天还有多少时间
+            FileUtils.appendStringToFile(new File(this.plugin.getDataFolder(),
+                    "playtime.log"), String.format("[%s] %s logged out",
+                    Timestamper.now(), event.getPlayer().getName()));
+            this.plugin.setPlayerLoggedOut(event.getPlayer().getUniqueId());
         }
-        this.plugin.setPlayerLoggedIn(event.getPlayer().getUniqueId());
-        event.getPlayer().sendMessage(
-                "You have " + ChatColor.GREEN + plugin.secondsToDaysHoursSecondsString(
-                        plugin.getTimeAllowedInSeconds(event.getPlayer().getUniqueId())) + ChatColor.RESET
-                        + " of playtime left!");
+        else if (this.plugin.getTimeAllowedInSeconds(event.getPlayer().getUniqueId()) > 0) {
+            // 剩余时间如果够的话，告诉玩家还剩多少时间
+            event.getPlayer().sendMessage(
+                    "You have " + ChatColor.GREEN + plugin.secondsToDaysHoursSecondsString(
+                            plugin.getTimeAllowedInSeconds(event.getPlayer().getUniqueId())) + ChatColor.RESET
+                            + " of playtime left!");
 
-        Player player = event.getPlayer();
-        PacketPlayOutPlayerListHeaderFooter packet = new PacketPlayOutPlayerListHeaderFooter();
-//        String title = plugin.getServer().getServerName();
-        String title = plugin.getServer().getName();
+            Player player = event.getPlayer();
+            PacketPlayOutPlayerListHeaderFooter packet = new PacketPlayOutPlayerListHeaderFooter();
+            String title = plugin.getServer().getServerName();
+            // 在玩家的tablist上显示剩余时间
+            new BukkitRunnable() {
+                @Override
+                public void run() {
+                    int allowed = plugin.getTimeAllowedInSeconds(player.getUniqueId());
+                    String timeLeft = plugin.secondsToDaysHoursSecondsString(allowed);
+                    try {
+                        Field a = packet.getClass().getDeclaredField("a");
+                        a.setAccessible(true);
+                        Field b = packet.getClass().getDeclaredField("b");
+                        b.setAccessible(true);
+                        Object header1 = new ChatComponentText(title);
+                        Object footer = new ChatComponentText(ChatColor.GOLD + timeLeft);
+                        a.set(packet, header1);
+                        b.set(packet, footer);
 
-        new BukkitRunnable() {
-            @Override
-            public void run() {
-                int allowed = plugin.getTimeAllowedInSeconds(player.getUniqueId());
-                String timeLeft = plugin.secondsToDaysHoursSecondsString(allowed);
-                try {
-                    Field a = packet.getClass().getDeclaredField("a");
-                    a.setAccessible(true);
-                    Field b = packet.getClass().getDeclaredField("b");
-                    b.setAccessible(true);
-                    Object header1 = new ChatComponentText(title);
-                    Object footer = new ChatComponentText(ChatColor.GOLD + timeLeft);
-                    a.set(packet, header1);
-                    b.set(packet, footer);
-
-                    if (Bukkit.getOnlinePlayers().size() == 0) return;
-                    ((CraftPlayer) player).getHandle().playerConnection.sendPacket(packet);
-                } catch (NoSuchFieldException | IllegalAccessException e) {
-                    e.printStackTrace();
+                        if (Bukkit.getOnlinePlayers().size() == 0) return;
+                        ((CraftPlayer) player).getHandle().playerConnection.sendPacket(packet);
+                    } catch (NoSuchFieldException | IllegalAccessException e) {
+                        e.printStackTrace();
+                    }
                 }
-            }
-        }.runTaskTimer(plugin, 0, 20);
+            }.runTaskTimer(plugin, 0, 20);
+            this.plugin.setPlayerLoggedIn(event.getPlayer().getUniqueId());
+        }
     }
 
     @EventHandler

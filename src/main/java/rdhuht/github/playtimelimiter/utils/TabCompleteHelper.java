@@ -6,9 +6,6 @@ import org.bukkit.OfflinePlayer;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * This class uses some methods from CanaryLib <https://github.com/CanaryModTeam/CanaryLib>
- */
 public class TabCompleteHelper {
     public static List<String> matchTo(String arg, String[] possible) {
         List<String> matches = new ArrayList<String>();
