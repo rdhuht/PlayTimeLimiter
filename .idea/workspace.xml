@@ -2,43 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89afe94e-1376-415d-9c9d-80bad1b5e92b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_13_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_javadoc_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_javadoc_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayTimeLimiter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PlayTimeLimiter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeLimiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeSaverTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeSaverTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/utils/TabCompleteHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/utils/TabCompleteHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/Configuration$Options.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/Configuration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeLimiter$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeLimiter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/exceptions/UnknownPlayerException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/metrics/MetricsLite$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/metrics/MetricsLite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/threads/PlayTimeSaverTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/threads/ShutdownThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/FileUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/MyUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/TabCompleteHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/Timestamper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,36 +131,36 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="385" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.800@0.0.1280.800" timestamp="1577242726711" />
-    <state width="1878" height="189" key="GridCell.Tab.0.bottom" timestamp="1577692545275">
+    <state width="1878" height="189" key="GridCell.Tab.0.bottom" timestamp="1577697039829">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="169" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1577257392209" />
     <state width="1877" height="193" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577236362666" />
-    <state width="1878" height="189" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577692545275" />
+    <state width="1878" height="189" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577697039829" />
     <state width="1238" height="171" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1577244442023" />
     <state width="1878" height="221" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1577263679510" />
-    <state width="1878" height="189" key="GridCell.Tab.0.center" timestamp="1577692545274">
+    <state width="1878" height="189" key="GridCell.Tab.0.center" timestamp="1577697039827">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="169" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1577257392207" />
     <state width="1877" height="193" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577236362666" />
-    <state width="1878" height="189" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577692545274" />
+    <state width="1878" height="189" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577697039827" />
     <state width="1238" height="171" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1577244442020" />
     <state width="1878" height="221" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1577263679509" />
-    <state width="1878" height="189" key="GridCell.Tab.0.left" timestamp="1577692545274">
+    <state width="1878" height="189" key="GridCell.Tab.0.left" timestamp="1577697039825">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="169" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1577257392205" />
     <state width="1877" height="193" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577236362666" />
-    <state width="1878" height="189" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577692545274" />
+    <state width="1878" height="189" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577697039825" />
     <state width="1238" height="171" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1577244442017" />
     <state width="1878" height="221" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1577263679508" />
-    <state width="1878" height="189" key="GridCell.Tab.0.right" timestamp="1577692545275">
+    <state width="1878" height="189" key="GridCell.Tab.0.right" timestamp="1577697039828">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="169" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1577257392208" />
     <state width="1877" height="193" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577236362666" />
-    <state width="1878" height="189" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577692545275" />
+    <state width="1878" height="189" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577697039828" />
     <state width="1238" height="171" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1577244442021" />
     <state width="1878" height="221" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1577263679509" />
     <state x="178" y="62" key="Maven.ArtifactSearchDialog" timestamp="1576813311766">
@@ -211,11 +177,11 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="423" y="185" key="chooseDestDirectoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1576135361467" />
-    <state x="476" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1577676161461">
+    <state x="476" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1577694932718">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="317" y="221" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1577255823462" />
-    <state x="476" y="298" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577676161461" />
+    <state x="476" y="298" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577694932718" />
     <state x="476" y="293" key="com.intellij.ide.util.TipDialog/0.23.1920.977@0.23.1920.977" timestamp="1577258057920" />
     <state x="476" y="302" key="com.intellij.ide.util.TipDialog/0.23.1920.989@0.23.1920.989" timestamp="1576921408049" />
     <state x="26" y="98" key="new project wizard" timestamp="1577265578918">

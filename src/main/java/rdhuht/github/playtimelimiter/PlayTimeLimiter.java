@@ -188,6 +188,11 @@ public class PlayTimeLimiter extends JavaPlugin {
         }
     }
 
+    //重制所有玩家的玩耍时间
+    public void resetAllPlayTime(){
+        timePlayed.clear();
+    }
+
 
     public int getPlayerPlayTime(UUID uuid) {
         int timePlayed = 0;
