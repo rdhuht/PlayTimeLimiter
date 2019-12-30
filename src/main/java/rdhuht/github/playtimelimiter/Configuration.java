@@ -53,6 +53,16 @@ public class Configuration {
             this.plugin.saveConfig();
         }
 
+        if (!this.plugin.getConfig().isSet(Options.RESET_HOUR)) {
+            this.plugin.getConfig().set(Options.RESET_HOUR, 24);
+            this.plugin.saveConfig();
+        }
+
+        if (!this.plugin.getConfig().isSet(Options.RESET_MINUTE)) {
+            this.plugin.getConfig().set(Options.RESET_MINUTE, 0);
+            this.plugin.saveConfig();
+        }
+
 		/*if (!getConfig().isSet("timeCap")) {
 			getConfig().set("timeCap", true);
 			saveConfig();
@@ -72,6 +82,25 @@ public class Configuration {
     public int getTimeStarted() {
         return this.plugin.getConfig().getInt(Options.TIME_STARTED);
     }
+
+    /**
+     * Gets the reset time every day in hour.
+     *
+     * @return The reset hour
+     */
+    public int getResetHour() {
+        return this.plugin.getConfig().getInt(Options.RESET_HOUR);
+    }
+
+    /**
+     * Gets the reset time every day in minute.
+     *
+     * @return The reset minute
+     */
+    public int getResetMinute() {
+        return this.plugin.getConfig().getInt(Options.RESET_MINUTE);
+    }
+
 
     /**
      * A psuedo-enum of all the configuration options in PlayTimeLimiter.
@@ -117,10 +146,17 @@ public class Configuration {
          * <strong>Default</strong>: <em>false</em>
          */
         public static final String TIME_TRAVELS = "timeTravels";
-
+        /**
+         * 剩余时间，显示提醒内容
+         */
         public static final String TIME_LEFT_5m = "timeleft5m";
         public static final String TIME_LEFT_1m = "timeleft1m";
         public static final String TIME_LEFT_10s = "timeleft10s";
+        /**
+         * 每天重置的时间点
+         */
+        public static final String RESET_HOUR = "resethour";
+        public static final String RESET_MINUTE = "resetminute";
 
         private Options() {
         }
