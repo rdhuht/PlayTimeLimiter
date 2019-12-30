@@ -6,7 +6,7 @@
 
     <groupId>rdhuht.github</groupId>
     <artifactId>PlayTimeLimiter</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>PlayTimeLimiter</name>
