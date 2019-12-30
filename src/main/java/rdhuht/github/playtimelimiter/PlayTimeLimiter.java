@@ -22,9 +22,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.Instant;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 import java.util.logging.Level;
 
 import static rdhuht.github.playtimelimiter.Configuration.Options.*;
@@ -99,11 +97,34 @@ public class PlayTimeLimiter extends JavaPlugin {
                 new PlayTimeCheckerTask(this), 20,
                 getConfig().getInt(SECONDS_BETWEEN_CHECKS) * 20);
 
+        // Task3 每天固定时间删除json文件里的hashmap数据
+        int h = this.configuration.getResetHour();
+        int m = this.configuration.getResetMinute();
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.HOUR_OF_DAY, h);
+        calendar.set(Calendar.MINUTE, m);
+        calendar.set(Calendar.SECOND, 0);
+        Date start_time = calendar.getTime();
+        Timer timer = new Timer();
+
+        this.getLogger().info("Daily RESET TIME SET AT >>> " + h + ':' + m + " <<<");
+        this.getLogger().info("每日  重置   时间  为 >>> " + h + '点' + m + "分 <<<");
+        timer.scheduleAtFixedRate(new TimerTask() {
+            public void run() {
+                System.out.println("----------------------------");
+                getLogger().info("Daily RESET TIME NOW >>> " + h + ':' + m + " <<<");
+                getLogger().info("现在重置时间！大赦天下啦！ >>> " + h + '点' + m + "分 <<<");
+                System.out.println("----------------------------");
+                resetAllPlayTime();
+            }
+        }, start_time, 1000 * 60 * 60 * 24);
+
         // Metrics
         try {
             final MetricsLite metrics = new MetricsLite(this);
             metrics.start();
-        } catch (final IOException ex) {
+        } catch (
+                final IOException ex) {
             this.getLogger().log(Level.INFO, "Failed to send Metrics data!", ex);
         }
     }
@@ -189,7 +210,7 @@ public class PlayTimeLimiter extends JavaPlugin {
     }
 
     //重制所有玩家的玩耍时间
-    public void resetAllPlayTime(){
+    public void resetAllPlayTime() {
         timePlayed.clear();
     }
 
