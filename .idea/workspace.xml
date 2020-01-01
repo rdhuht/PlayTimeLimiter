@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89afe94e-1376-415d-9c9d-80bad1b5e92b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeLimiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PlayTimeLimiter-1.3-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/Configuration$Options.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/Configuration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeLimiter$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeLimiter$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeLimiter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/PlayTimeListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/exceptions/UnknownPlayerException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/metrics/MetricsLite$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/metrics/MetricsLite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/threads/PlayTimeCheckerTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/threads/PlayTimeSaverTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/threads/ShutdownThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/FileUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/MyUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/TabCompleteHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rdhuht/github/playtimelimiter/utils/Timestamper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-PlayTimeLimiter-1.3-SNAPSHOT.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="89afe94e-1376-415d-9c9d-80bad1b5e92b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,12 +173,12 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="423" y="185" key="chooseDestDirectoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1576135361467" />
-    <state x="317" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1577851567546">
+    <state x="317" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1577858057459">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1577698582004" />
     <state x="476" y="298" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577694932718" />
-    <state x="317" y="217" key="com.intellij.ide.util.TipDialog/0.23.1280.709@0.23.1280.709" timestamp="1577851567546" />
+    <state x="317" y="217" key="com.intellij.ide.util.TipDialog/0.23.1280.709@0.23.1280.709" timestamp="1577858057459" />
     <state x="476" y="293" key="com.intellij.ide.util.TipDialog/0.23.1920.977@0.23.1920.977" timestamp="1577258057920" />
     <state x="476" y="302" key="com.intellij.ide.util.TipDialog/0.23.1920.989@0.23.1920.989" timestamp="1576921408049" />
     <state x="26" y="98" key="new project wizard" timestamp="1577265578918">
