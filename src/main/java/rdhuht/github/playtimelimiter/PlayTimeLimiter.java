@@ -116,6 +116,7 @@ public class PlayTimeLimiter extends JavaPlugin {
                 getLogger().info("现在重置时间！大赦天下啦！ >>> " + h + '点' + m + "分 <<<");
                 System.out.println("----------------------------");
                 resetAllPlayTime();
+                savePlayTime();
             }
         }, start_time, 1000 * 60 * 60 * 24);
 

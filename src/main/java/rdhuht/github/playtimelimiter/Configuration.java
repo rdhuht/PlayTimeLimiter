@@ -14,22 +14,22 @@ public class Configuration {
      */
     public void ensureDefaults() {
         if (!this.plugin.getConfig().isSet(Options.INITIAL_TIME)) {
-            this.plugin.getConfig().set(Options.INITIAL_TIME, 28800);
+            this.plugin.getConfig().set(Options.INITIAL_TIME, 2400);
             this.plugin.saveConfig();
         }
 
         if (!this.plugin.getConfig().isSet(Options.TIME_PER_DAY)) {
-            this.plugin.getConfig().set(Options.TIME_PER_DAY, 3600);
+            this.plugin.getConfig().set(Options.TIME_PER_DAY, 2400);
             this.plugin.saveConfig();
         }
 
         if (!this.plugin.getConfig().isSet(Options.SECONDS_BETWEEN_CHECKS)) {
-            this.plugin.getConfig().set(Options.SECONDS_BETWEEN_CHECKS, 10);
+            this.plugin.getConfig().set(Options.SECONDS_BETWEEN_CHECKS, 2);
             this.plugin.saveConfig();
         }
 
         if (!this.plugin.getConfig().isSet(Options.SECONDS_BETWEEN_SAVES)) {
-            this.plugin.getConfig().set(Options.SECONDS_BETWEEN_SAVES, 600);
+            this.plugin.getConfig().set(Options.SECONDS_BETWEEN_SAVES, 60);
             this.plugin.saveConfig();
         }
 
@@ -39,17 +39,17 @@ public class Configuration {
         }
 
         if (!this.plugin.getConfig().isSet(Options.TIME_LEFT_5m)) {
-            this.plugin.getConfig().set(Options.TIME_LEFT_5m, "5 minutes!");
+            this.plugin.getConfig().set(Options.TIME_LEFT_5m, "5 minutes! 请保存代码！");
             this.plugin.saveConfig();
         }
 
         if (!this.plugin.getConfig().isSet(Options.TIME_LEFT_1m)) {
-            this.plugin.getConfig().set(Options.TIME_LEFT_1m, "1 minute!");
+            this.plugin.getConfig().set(Options.TIME_LEFT_1m, "1 minute! 准备退出游戏！");
             this.plugin.saveConfig();
         }
 
         if (!this.plugin.getConfig().isSet(Options.TIME_LEFT_10s)) {
-            this.plugin.getConfig().set(Options.TIME_LEFT_10s, "10s!");
+            this.plugin.getConfig().set(Options.TIME_LEFT_10s, "10s! See you next time!");
             this.plugin.saveConfig();
         }
 
@@ -82,6 +82,7 @@ public class Configuration {
     public int getTimeStarted() {
         return this.plugin.getConfig().getInt(Options.TIME_STARTED);
     }
+
 
     /**
      * Gets the reset time every day in hour.

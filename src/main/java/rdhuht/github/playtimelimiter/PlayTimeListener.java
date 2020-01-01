@@ -26,11 +26,13 @@ public class PlayTimeListener implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
+        Player player = event.getPlayer();
+        // 先记录进入时间
         FileUtils.appendStringToFile(new File(this.plugin.getDataFolder(),
                 "playtime.log"), String.format("[%s] %s logged in",
-                Timestamper.now(), event.getPlayer().getName()));
+                Timestamper.now(), player.getName()));
         // 玩家登陆游戏，检查剩余时间
-        // 剩余时间不够，踢出服务器并记录踢出的时间点
+        // 剩余时间不够，踢出服务器并记录踢出的时间点和退出时间
         if (this.plugin.getTimeAllowedInSeconds(event.getPlayer().getUniqueId()) <= 0) {
             FileUtils.appendStringToFile(new File(this.plugin.getDataFolder(), "playtime.log"),
                     String.format("[%s] %s was kicked for exceeding play time",
@@ -40,15 +42,13 @@ public class PlayTimeListener implements Listener {
                     "playtime.log"), String.format("[%s] %s logged out",
                     Timestamper.now(), event.getPlayer().getName()));
             this.plugin.setPlayerLoggedOut(event.getPlayer().getUniqueId());
-        }
-        else if (this.plugin.getTimeAllowedInSeconds(event.getPlayer().getUniqueId()) > 0) {
+        } else if (this.plugin.getTimeAllowedInSeconds(event.getPlayer().getUniqueId()) > 0) {
             // 剩余时间如果够的话，告诉玩家还剩多少时间
             event.getPlayer().sendMessage(
                     "You have " + ChatColor.GREEN + plugin.secondsToDaysHoursSecondsString(
                             plugin.getTimeAllowedInSeconds(event.getPlayer().getUniqueId())) + ChatColor.RESET
                             + " of playtime left!");
 
-            Player player = event.getPlayer();
             PacketPlayOutPlayerListHeaderFooter packet = new PacketPlayOutPlayerListHeaderFooter();
             String title = plugin.getServer().getServerName();
             // 在玩家的tablist上显示剩余时间
