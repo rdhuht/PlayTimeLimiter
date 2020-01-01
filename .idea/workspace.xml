@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89afe94e-1376-415d-9c9d-80bad1b5e92b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdhuht/github/playtimelimiter/PlayTimeLimiter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,11 +175,12 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="423" y="185" key="chooseDestDirectoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1576135361467" />
-    <state x="317" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1577698582004">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="317" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1577840372081">
+      <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1577698582004" />
     <state x="476" y="298" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577694932718" />
+    <state x="317" y="217" key="com.intellij.ide.util.TipDialog/0.23.1280.709@0.23.1280.709" timestamp="1577840372081" />
     <state x="476" y="293" key="com.intellij.ide.util.TipDialog/0.23.1920.977@0.23.1920.977" timestamp="1577258057920" />
     <state x="476" y="302" key="com.intellij.ide.util.TipDialog/0.23.1920.989@0.23.1920.989" timestamp="1576921408049" />
     <state x="26" y="98" key="new project wizard" timestamp="1577265578918">
