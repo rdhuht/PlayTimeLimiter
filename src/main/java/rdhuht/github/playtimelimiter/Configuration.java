@@ -102,6 +102,14 @@ public class Configuration {
         return this.plugin.getConfig().getInt(Options.RESET_MINUTE);
     }
 
+    /**
+     * Gets the daily play time.
+     *
+     * @return The daily seconds
+     */
+    public int getTimePerDay() {
+        return this.plugin.getConfig().getInt(Options.TIME_PER_DAY);
+    }
 
     /**
      * A psuedo-enum of all the configuration options in PlayTimeLimiter.

@@ -115,8 +115,7 @@ public class PlayTimeLimiter extends JavaPlugin {
                 getLogger().info("Daily RESET TIME NOW >>> " + h + ':' + m + " <<<");
                 getLogger().info("现在重置时间！大赦天下啦！ >>> " + h + '点' + m + "分 <<<");
                 System.out.println("----------------------------");
-                resetAllPlayTime();
-                savePlayTime();
+                timePlayed.clear();  // 清空所有玩家的存储信息
             }
         }, start_time, 1000 * 60 * 60 * 24);
 
@@ -208,11 +207,6 @@ public class PlayTimeLimiter extends JavaPlugin {
         } else {
             throw new UnknownPlayerException(uuid);
         }
-    }
-
-    //重制所有玩家的玩耍时间
-    public void resetAllPlayTime() {
-        timePlayed.clear();
     }
 
 

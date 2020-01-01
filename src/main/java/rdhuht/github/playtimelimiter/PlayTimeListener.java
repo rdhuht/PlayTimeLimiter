@@ -14,6 +14,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.scheduler.BukkitRunnable;
+import rdhuht.github.playtimelimiter.exceptions.UnknownPlayerException;
 import rdhuht.github.playtimelimiter.utils.FileUtils;
 import rdhuht.github.playtimelimiter.utils.Timestamper;
 
@@ -80,6 +81,23 @@ public class PlayTimeListener implements Listener {
 
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) {
+        Configuration conf = new Configuration(plugin);
+        Player player = event.getPlayer();
+        if (player.isOp()) {
+            FileUtils.appendStringToFile(new File(this.plugin.getDataFolder(),
+                    "playtime.log"), String.format("[%s] %s playedTime reset",
+                    Timestamper.now(), "[OP: " + player.getName() + ']'));
+            if (!plugin.hasStarted()) {
+                player.sendMessage(ChatColor.RED + "Playtime hasn't started yet!");
+            } else {
+                try {
+                    plugin.setPlayTime(player.getUniqueId(), 0); // 恢复每日的游戏时间
+                } catch (UnknownPlayerException e) {
+                    e.printStackTrace();
+                    player.sendMessage(ChatColor.RED + e.getMessage());
+                }
+            }
+        }
         FileUtils.appendStringToFile(new File(this.plugin.getDataFolder(),
                 "playtime.log"), String.format("[%s] %s logged out",
                 Timestamper.now(), event.getPlayer().getName()));
